@@ -434,6 +434,14 @@ nav a:hover {
     padding-top: 150px;
   }
 
+  .about-container p {
+    font-size: 36px;
+  }
+
+  #resume p {
+    font-size: 36px;
+  }
+
   .profile {
     margin: auto;
   }
