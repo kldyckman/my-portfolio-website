@@ -444,4 +444,10 @@ nav a:hover {
     max-width: 90%;
   }
 
+
+  [data-aos-delay] {
+    transition-delay: 2s !important;
+  }
+  
+
   }
