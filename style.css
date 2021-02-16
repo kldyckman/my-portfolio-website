@@ -432,6 +432,7 @@ nav a:hover {
   .about-container {
     flex-wrap: wrap;
     text-size-adjust: none;
+    padding-top: 150px;
   }
 
   .profile {
