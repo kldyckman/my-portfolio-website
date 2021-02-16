@@ -442,4 +442,14 @@ nav a:hover {
     max-width: 90%;
   }
 
+  #ithaca h3 {
+    font-size: 34.87px;
+    text-size-adjust: none;
+  }
+
+  #ithaca p, h4 {
+    text-size-adjust: none;
+    font-size: 33px;
+  }
+
 }
