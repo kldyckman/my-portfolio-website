@@ -443,13 +443,23 @@ nav a:hover {
   }
 
   #ithaca h3 {
-    font-size: 34.87px;
     text-size-adjust: none;
+    font-size: 34.87px;
   }
 
-  #ithaca p, h4 {
+  #ithaca p {
     text-size-adjust: none;
     font-size: 33px;
+  }
+
+  #ithaca h4 {
+    text-size-adjust: none;
+    font-size: 33px;
+  }
+
+  #resume a {
+    text-size-adjust: none;
+    font-size: 52px;
   }
 
 }
