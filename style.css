@@ -424,6 +424,10 @@ nav a:hover {
     margin: auto;
   }
 
+  .other-skills-container {
+    height: auto;
+  }
+
 }
 
 @media screen and (max-device-width:640px), screen and (max-width:640px) {
@@ -511,7 +515,6 @@ nav a:hover {
 
   .other-skills-container {
     width: 600px;
-    height: 580px;
   }
 
   .other-skills-container li {
@@ -532,6 +535,21 @@ nav a:hover {
 
   .edu-info li {
     font-size: 33px;
+  }
+
+  #ithaca h3 {
+    text-size-adjust: none;
+    font-size: 34.87px;
+  }
+
+  #ithaca p {
+    text-size-adjust: none;
+    font-size: 34.1px;
+  }
+
+ #ithaca h4 {
+    text-size-adjust: none;
+    font-size: 34.1px;
   }
 
   #resume p {
