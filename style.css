@@ -522,18 +522,22 @@ nav a:hover {
   }
 
   .edu-info h3 {
+    text-size-adjust: none;
     font-size: 34.87px;
   }
 
   .edu-info p {
+    text-size-adjust: none;
     font-size: 33px;
   }
 
  .edu-info h4 {
+    text-size-adjust: none;
     font-size: 33px;
   }
 
   .edu-info li {
+    text-size-adjust: none;
     font-size: 33px;
   }
 
@@ -544,12 +548,12 @@ nav a:hover {
 
   #ithaca p {
     text-size-adjust: none;
-    font-size: 34.1px;
+    font-size: 33px;
   }
 
  #ithaca h4 {
     text-size-adjust: none;
-    font-size: 34.1px;
+    font-size: 33px;
   }
 
   #resume p {
