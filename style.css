@@ -432,6 +432,22 @@ nav a:hover {
 
 @media screen and (max-device-width:640px), screen and (max-width:640px) {
 
+  #projects {
+    scroll-margin-top: 5em;
+  }
+
+  #skills {
+    scroll-margin-top: 5em;
+  }
+
+  #education {
+    scroll-margin-top: 5em;
+  }
+
+  #resume {
+    scroll-margin-top: 5em;
+  }
+
   header {
     max-height: 120px;
     width: 96%;
