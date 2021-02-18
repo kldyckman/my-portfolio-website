@@ -428,13 +428,37 @@ nav a:hover {
 
 @media screen and (max-device-width:640px), screen and (max-width:640px) {
 
+  header {
+    max-height: 120px;
+    width: 96%;
+  }
+  
+  h1 {
+    text-size-adjust: none;
+    font-size: 52px;
+  }
+
+  nav li {
+    text-size-adjust: none;
+    font-size: 28px;
+  }
+  
+  h4 {
+    font-size: 33px;
+  }
+  
+  p {
+    font-size: 33px;
+  }
+  
   .about-container {
     flex-wrap: wrap;
-    padding-top: 150px;
+    padding-top: 180px;
   }
 
   .about-container p {
-    font-size: 12px;
+    text-size-adjust: none;
+    font-size: 38px;
   }
 
   .profile {
@@ -444,6 +468,70 @@ nav a:hover {
   hr {
     height: .25rem;
     max-width: 90%;
+  }
+
+  .project {
+    width: 860px;
+    height: 440px;
+  }
+
+  .nav-projects a {
+    font-size: 33px;
+    width: 180px;
+  }
+
+  .ravenous {
+    margin-bottom: 5px;
+  }
+  
+  .credit {
+    margin-top: 50px;
+  }
+  
+  .python {
+    margin-top: 50px;
+  }
+  
+  .doggo {
+    margin-top: 100px;
+  }
+  
+  .tea {
+    margin-top: 100px;
+  }
+  
+  .excursion {
+    margin-top: 100px;
+  }
+
+  .skills-container h3 {
+    text-size-adjust: none;
+    font-size: 34.87px;
+  }
+
+  .other-skills-container {
+    width: 600px;
+    height: 580px;
+  }
+
+  .other-skills-container li {
+    font-size: 33px;
+  }
+
+  .edu-info h3 {
+    font-size: 34.87px;
+  }
+
+  .edu-info p {
+    font-size: 33px;
+  }
+
+ .edu-info h4 {
+    font-size: 33px;
+  }
+
+  .edu-info li {
+    font-size: 33px;
   }
 
   #ithaca h3 {
@@ -456,14 +544,19 @@ nav a:hover {
     font-size: 33px;
   }
 
-  #ithaca h4 {
+ #ithaca h4 {
     text-size-adjust: none;
     font-size: 33px;
   }
 
-  #resume a {
+  #resume p {
     text-size-adjust: none;
-    font-size: 52px;
+    font-size: 38px;
+  }
+
+  .email {
+    text-size-adjust: none;
+    font-size: 38px;
   }
 
 }
