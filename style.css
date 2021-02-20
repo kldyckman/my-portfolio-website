@@ -205,7 +205,7 @@ nav .last-link {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 4rem;
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
 .technical-skills-container .image img {
