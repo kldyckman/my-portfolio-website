@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
     <title>Kimberly Dyckman Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
@@ -11,42 +14,59 @@
   <body>
 
     <header>
-      <nav>
-        <h1><a href="index.html">Kimberly Dyckman</a></h1>
+      <nav class="mobile menu">
+        <ul class="menu">
+          <li class="logo"><h1 class="logo"><a href="index.html">Kimberly Dyckman</a></h1></li>
+          <li class="item about"><a href="#about">About Me</a></li>
+          <li class="item projects"><a href="#projects">Projects</a></li>
+          <li class="item skills"><a href="#skills">Skills</a></li>
+          <li class="item education"><a href="#education">Education</a></li>
+          <li class="item resume"><a href="#resume">Resume & Contact</a></li>
+          <li class="toggle"><a><i class="fa fa-bars fa-lg"></i></a></li>
+        </ul>
+      </nav>
+      <h1 class="desktop"><a href="index.html">Kimberly Dyckman</a></h1>
+      <nav class="desktop">
         <ul>
           <li><a href="#about">About Me</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#education">Education</a></li>
-          <li><a href="#resume">Resume & Contact</a></li>
+          <li class="last-link"><a href="#resume">Resume & Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
       <section id="about">
-        <div class="about-container">
-          <img src="Assets/profile.jpg" alt="A photo of Kimberly Dyckman" class="profile">
+        <div class="about-container container">
+          <img class="profile" src="Assets/profile.jpg" alt="A photo of Kimberly Dyckman">
           <div class="about-text">
             <h2>About Me</h2>
-            <p>Hi! I'm Kimberly, a Ticketing and Sales Manager in the live events industry.</p>
-            <p>I have experience in SaaS, marketing, outbound/inbound BDR, account management and finance skills. I also have experience in IT and customer service. I recently received a certificate in IT Automation with Python through Google.</p>
-            <p>Below you can find more information on various projects I have worked on along with my skills and educational background. You can also download my Resume, navigate to my GitHub and LinkedIn pages and find ways to contact me.</p>
-            <p>Fun fact! I am also a professionally trained opera and musical theatre performer.</p>
+            <hr class="mobile" data-aos="zoom-in"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" />
+            <div class="intro">
+              <p>Hi! I'm Kimberly, a Ticketing and Sales Manager in the live events industry.</p>
+              <p>I have experience in SaaS, marketing, outbound/inbound BDR, account management and finance skills. I also have experience in IT and customer service. I recently received a certificate in IT Automation with Python through Google.</p>
+              <p>Below you can find more information on various projects I have worked on along with my skills and educational background. You can also download my Resume, navigate to my GitHub and LinkedIn pages and find ways to contact me.</p>
+              <p>Fun fact! I am also a professionally trained opera and musical theatre performer.</p>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="projects">
-        <div class="projects-container">
+        <div class="projects-container container">
           <h2>Projects</h2>
           <hr data-aos="zoom-in"
           data-aos-offset="300"
           data-aos-easing="ease-in-sine" />
           <div class="project-row">
+
             <div class="project">
               <div class="details">
-                <h4>Ravenous</h4>
+                <h3>Ravenous</h3>
                 <p class="ravenous">A React-based front-end web app that searches a database like Yelp and returns relevant data sorted by best match, highest rated or most reviewed.</p>
               </div>
               <div class="nav-projects">
@@ -54,60 +74,66 @@
                 <a href="https://github.com/kldyckman/ravenous" target="_blank">Repository</a>
               </div>
             </div>
+
             <div class="project">
               <div class="details">
-                <h4>Credit Card Checker</h4>
+                <h3>Credit Card Checker</h3>
                 <p>Optimizes credit card verification process using knowledge of functions and loops to handle multiple credit cards at a time.</p>
-                <div class="nav-projects credit">
-                  <a href="https://github.com/kldyckman/Credit-Card-Checker" target="_blank">Repository</a>
-                </div>
+              </div>
+              <div class="nav-projects credit">
+                <a href="https://github.com/kldyckman/Credit-Card-Checker" target="_blank">Repository</a>
               </div>
             </div>
+
             <div class="project">
               <div class="details">
-                <h4>Python Automation Project</h4>
+                <h3>Python Automation Project</h3>
                 <p>This repository contains all of the scripts created as part of the Google IT Automation with Python Final Project.</p>
-                <div class="nav-projects python">
-                  <a href="https://github.com/kldyckman/Google-Certification-Final-Project" target="_blank">Repository</a>
-                </div>
+              </div>
+              <div class="nav-projects python">
+                <a href="https://github.com/kldyckman/Google-Certification-Final-Project" target="_blank">Repository</a>
               </div>
             </div>
+
             <div class="project">
               <div class="details">
-                <h4>Cute Doggos and Good Boys</h4>
+                <h3>Cute Doggos and Good Boys</h3>
                 <p>A layout for a company’s homepage using flexbox.</p>
-                <div class="nav-projects doggo">
-                  <a href="https://kldyckman.github.io/cutedoggos/" target="_blank">Website</a>
-                  <a href="https://github.com/kldyckman/cutedoggos" target="_blank">Repository</a>
-                </div>
+              </div>
+              <div class="nav-projects doggo">
+                <a href="https://kldyckman.github.io/cutedoggos/" target="_blank">Website</a>
+                <a href="https://github.com/kldyckman/cutedoggos" target="_blank">Repository</a>
               </div>
             </div>
+
             <div class="project">
               <div class="details">
-                <h4>Tea Cozy</h4>
+                <h3>Tea Cozy</h3>
                 <p>Tea shop website implementing requested design specs and image assets.</p>
-                <div class="nav-projects tea">
-                  <a href="https://kldyckman.github.io/teacozy/" target="_blank">Website</a>
-                  <a href="https://github.com/kldyckman/teacozy" target="_blank">Repository</a>
-                </div>
+              </div>
+              <div class="nav-projects tea">
+                <a href="https://kldyckman.github.io/teacozy/" target="_blank">Website</a>
+                <a href="https://github.com/kldyckman/teacozy" target="_blank">Repository</a>
               </div>
             </div>
+
             <div class="project">
               <div class="details">
-                <h4>Excursion</h4>
+                <h3>Excursion</h3>
                 <p>A web page which advertises a product called “Excursion.”</p>
-                <div class="nav-projects excursion">
-                  <a href="https://kldyckman.github.io/excursion/" target="_blank">Website</a>
-                  <a href="https://github.com/kldyckman/excursion" target="_blank">Repository</a>
-                </div>
+              </div>
+              <div class="nav-projects excursion">
+                <a href="https://kldyckman.github.io/excursion/" target="_blank">Website</a>
+                <a href="https://github.com/kldyckman/excursion" target="_blank">Repository</a>
               </div>
             </div>
+
           </div>
         </div>
       </section>
 
       <section id="skills">
-        <div class="skills-container">
+        <div class="skills-container container">
           <h2>Skills</h2>
           <hr data-aos="zoom-in"
           data-aos-offset="300"
@@ -180,7 +206,7 @@
 
       <section id="education">
 
-        <div class="education-container">
+        <div class="education-container container">
 
           <h2>Education</h2>
           <hr data-aos="zoom-in"
@@ -261,13 +287,15 @@
       </section>
 
       <section id="resume">
-        <div class="contact-container">
+        <div class="contact-container container">
           <h2>Resume & Contact</h2>
           <hr data-aos="zoom-in"
           data-aos-offset="300"
           data-aos-easing="ease-in-sine" />
-          <p>You can download a copy of my resume <a href="Assets/Kimberly Dyckman resume.pdf" target="_blank" download>here</a>.</p>
-          <p>Feel free to email me or contact me through the links below:</p>
+          <div class="contact-info-p">
+            <p>You can download a copy of my resume <a href="Assets/Kimberly Dyckman resume.pdf" target="_blank" download>here</a>.</p>
+            <p>Feel free to email me or contact me through the links below:</p>
+          </div>
           <div class="contact-info-container">
             <p><a class="email" href="mailto:kldyckman@gmail.com">kldyckman@gmail.com</a></p>
             <div class="image" id="github-contact">
@@ -286,6 +314,7 @@
 
     </main>
 
+    <script src="./script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
