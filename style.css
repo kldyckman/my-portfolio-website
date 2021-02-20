@@ -247,12 +247,15 @@ nav .last-link {
 #education {
   background-color: #BEA3EB;
   scroll-margin-top: 3.5rem;
+  display: flex;
+  justify-content: center;
 }
 
 .education-list-container {
   background-color: white;
   box-shadow: 0 0 20px rgb(0 0 0 / 20%);
   border-radius: 10px;
+  max-width: 50rem;
   display: flex;
   flex-flow: column;
   padding: 0 1.5rem;
@@ -504,6 +507,10 @@ nav .last-link {
 
   .about-container h2 {
     text-align: center;
+  }
+
+  .education-list-container {
+    margin: 1.5rem;
   }
 
 }
