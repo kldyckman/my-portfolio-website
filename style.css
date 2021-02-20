@@ -1,8 +1,13 @@
 /* Universal Styles */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  margin: auto;
-  font-size: 22px;
+  font-size: 16px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -10,39 +15,43 @@ main {
   background-color: #FFFFFF;
 }
 
-h2, h3, h4, p, summary {
-  margin-left: 40px;
-  margin-right: 40px;
+h2 {
+  text-align: center;
 }
 
-h2 {
-  margin-top: 28px;
-  margin-bottom: 28px;
+.mobile {
+  display: none;
+}
+
+.container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 /* JavaScript Scroll Animation */
 
 hr {
-  height: .25rem;
-  max-width: 1020px;
   margin: auto;
+  height: .25rem;
+  max-width: 85%;
   background: #686EF2;
   border: none;
   transition: .3s ease-in-out;
 }
 
-/* Header */
+/* Header and Nav */
 
 header {
-  background-color: #FFFFFF;
-  box-shadow: 0 1px 9px -3px rgb(0 0 0 / 40%);
-  height: auto;
-  max-height: 90px;
-  width: 98%;
-  padding: 20px;
   position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 1px 9px -3px rgb(0 0 0 / 40%);
   z-index: 10;
-  text-size-adjust: 80%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header h1 {
@@ -54,23 +63,24 @@ header h1:hover {
   transform: scale(1.08);
 }
 
-/* Nav */
-    
-nav {
-  display: flex;
-  justify-content: space-between;
+header a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.4s;
+}
+
+header a:hover {
+  color: #686EF2;
 }
     
 nav ul {
-  display: inline-flex;
+  display: flex;
   list-style-type: none;
-  padding-inline-start: 0px;
-  margin: 0px;
   align-items: center;
 }
 
 nav li {
-  padding: 0px 10px;
+  padding: 0 .5rem;
   transition: transform 0.4s;
 }
 
@@ -78,50 +88,55 @@ nav li:hover {
   transform: scale(1.08);
 }
 
-nav a {
-  color: black;
-  text-decoration: none;
-  transition: color 0.4s;
-}
-
-nav a:hover {
-  color: #686EF2;
-}
-    
+nav .last-link {
+  padding-right: 0;
+}   
     
 /* About Me */
 
 #about {
   background-color: #FFFFFF;
-  scroll-margin-top: 4em;
+  scroll-margin-top: 3.5rem;
 }
 
 .about-container {
-  max-width: 1100px;
-  margin: auto;
-  display: flex;
-  padding-top: 120px;
-  padding-bottom: 30px;
+  display: flex; 
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+.about-text {
+  padding: 2rem;
+}
+
+.about-container h2 {
+  text-align: initial;
+}
+
+.about-conatiner hr {
+  margin-bottom: 1rem;
+}
+
+.intro {
+  margin-top: 1.5rem;
+}
+
+.about-container p {
+  margin: 0 0 .5rem 0;
 }
 
 .profile {
   width: 300px;
   max-height: 300px;
   border-radius: 50%;
-  margin: 20px;
+  padding: 2rem;
 }
 
 /* Projects */
 
 #projects {
   background-color:#BEA3EB;
-  scroll-margin-top: 4em;
-}
-
-.projects-container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 30px 0px;
+  scroll-margin-top: 3.5rem;
 }
 
 .project-row {
@@ -132,52 +147,31 @@ nav a:hover {
 
 .project {
   background-color: white;
-  width: 450px;
-  height: 350px;
+  width: 24rem;
+  height: 18rem;
   box-shadow: 0 0 20px rgb(0 0 0 / 20%);
-  border-radius: 10px;
+  border-radius: .5rem;
   display: flex;
   flex-flow: column;
-  padding: 20px;
-  margin: 20px;
-  transition: margin 0.4s, padding 0.4s;
+  padding: 1.5rem;
+  margin: 1.5rem;
 }
 
-.project:hover {
-  padding: 30px;
-  margin: 10px;
-}
-
-.ravenous {
-  margin-bottom: 5px;
-}
-
-.credit {
-  margin-top: 40px;
-}
-
-.python {
-  margin-top: 40px;
-}
-
-.doggo {
-  margin-top: 105px;
-}
-
-.tea {
-  margin-top: 75px;
-}
-
-.excursion {
-  margin-top: 108px;
+.details h3 {
+  margin: 0 0 1rem 0;
+  text-align: center;
 }
 
 .nav-projects {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
 }
 
 .nav-projects a {
-  width: 120px;
+  width: 7.5rem;
   background-color: #686EF2;
   border: none;
   border-radius: 10px;
@@ -185,8 +179,8 @@ nav a:hover {
   justify-content: center;
   text-decoration: none;
   display: inline-block;
-  padding: 20px;
-  margin: 10px 20px;
+  padding: 1rem;
+  margin: 1rem;
   transition: transform 0.4s;
 }
 
@@ -198,32 +192,27 @@ nav a:hover {
 
 #skills {
   background-color: #FFFFFF;
-  scroll-margin-top: 4em;
+  scroll-margin-top: 3.5rem;
 }
 
 #skills h3 {
   text-align: center;
-}
-
-.skills-container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 30px 0px;
+  margin: 1.5rem 0;
 }
 
 .technical-skills-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0px auto;
-  padding: 30px 0;
+  margin: 0 4rem;
+  padding: 2rem;
 }
 
 .technical-skills-container .image img {
   transition: transform 0.4s;
-  height: 100px;
-  width: auto;
-  margin: 20px;
+  height: 6.25rem;
+  width: 6.25rem;
+  margin: 1.5rem;
 }
 
 .technical-skills-container .image img:hover {
@@ -233,38 +222,31 @@ nav a:hover {
 .other-skills-row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .other-skills-container {
+  max-width: 24rem;
+  min-height: 18rem;
   background-color: white;
-  width: 450px;
-  height: 440px;
   box-shadow: 0 0 20px rgb(0 0 0 / 20%);
   border-radius: 10px;
   display: flex;
   flex-flow: column;
-  padding: 10px;
-  margin: 20px;
+  padding: 1rem;
+  margin: 1.5rem;
   transition: margin 0.4s, padding 0.4s;
 }
 
-.other-skills-container:hover {
-  padding: 10px 20px 20px 20px;
-  margin: 20px 10px 10px 10px;
+.other-skills-container ul {
+  padding-left: 1rem;
 }
 
 /* Education */
 
 #education {
   background-color: #BEA3EB;
-  scroll-margin-top: 4em;
-}
-
-.education-container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 30px 0px;
+  scroll-margin-top: 3.5rem;
 }
 
 .education-list-container {
@@ -273,53 +255,40 @@ nav a:hover {
   border-radius: 10px;
   display: flex;
   flex-flow: column;
-  flex-wrap: wrap;
-  padding: 20px;
-  margin: 40px;
+  padding: 0 1.5rem;
+  margin: 1.5rem;
   transition: margin 0.4s, padding 0.4s;
 }
 
-.education-list-container:hover {
-  padding: 40px;
-  margin: 20px;
-}
-
-
 .education-item {
   display: flex;
-  flex-wrap: wrap;
-  flex-flow: row;
-  padding: 20px;
-  margin: 0px auto;
-  width: 800px;
+  padding: 1.5rem;
 }
 
+.education-item ul {
+  padding-left: 1.5rem;
+}
 
 .edu-info {
   width: 100%;
-  padding: 0px;
-  margin-top: 20px;
+  padding: 0 2rem 2rem 2rem;
 }
 
 .edu-info h3 {
-  margin: 0px auto;
-  padding: 5px;
+  padding-bottom: .5rem;
 }
 
 .edu-info h4 {
-  margin: 0px auto;
-  padding: 5px;
+  padding-bottom: .5rem;
 }
 
 .edu-info p {
-  margin: 0px auto;
-  padding: 5px;
+  padding-bottom: .5rem;
 }
 
 .education-container img {
   height: 100px;
   width: auto;
-  margin: 20px 50px;
 }
 
 #codecademy {
@@ -338,17 +307,19 @@ nav a:hover {
 
 #resume {
   background-color: #FFFFFF;
-  scroll-margin-top: 4em;
+  scroll-margin-top: 3.5rem;
 }
 
 #resume p {
   text-align: center;
 }
 
-.contact-container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 30px 0px;
+.contact-info-p {
+  margin-top: 1.5rem;
+}
+
+.contact-info-p p {
+  margin: 0 0 .5rem 0;
 }
 
 .contact-container a {
@@ -399,187 +370,140 @@ nav a:hover {
     
 /* Smaller Screens */
 
-
-
-    
-@media only screen and (max-width: 1112px) {
-    
-  .technical-skills-container {
-    width: 600px;
-  }
-
-}
-
-@media screen and (max-device-width:768px), screen and (max-width:768px) {
-  nav {
-    flex-wrap: wrap;
-  }
-
-  header h1 {
-    padding: 0px 100px;
-    margin: auto;
-  }
-
-  nav ul {
-    margin: auto;
-  }
-
-  .other-skills-container {
-    height: auto;
-  }
-
-}
-
-@media screen and (max-device-width:640px), screen and (max-width:640px) {
-
-  #projects {
-    scroll-margin-top: 5em;
-  }
-
-  #skills {
-    scroll-margin-top: 5em;
-  }
-
-  #education {
-    scroll-margin-top: 5em;
-  }
-
-  #resume {
-    scroll-margin-top: 5em;
-  }
-
-  header {
-    max-height: 120px;
-    width: 96%;
-  }
-  
-  h1 {
-    text-size-adjust: none;
-    font-size: 52px;
-  }
-
-  nav li {
-    text-size-adjust: none;
-    font-size: 28px;
-  }
-  
-  h4 {
-    font-size: 33px;
-  }
-  
-  p {
-    font-size: 33px;
-  }
-  
-  .about-container {
-    flex-wrap: wrap;
-    padding-top: 180px;
-  }
-
-  .about-container p {
-    text-size-adjust: none;
-    font-size: 38px;
-  }
-
-  .profile {
-    margin: auto;
-  }
-
-  hr {
-    height: .25rem;
-    max-width: 90%;
-  }
+@media only screen and (max-width: 337px) {
 
   .project {
-    width: 860px;
-    height: 440px;
+    height: 26rem;
   }
 
-  .nav-projects a {
-    font-size: 33px;
-    width: 180px;
+  .nav-projects {
+    flex-direction: column;
   }
 
-  .ravenous {
-    margin-bottom: 5px;
-  }
-  
-  .credit {
-    margin-top: 50px;
-  }
-  
-  .python {
-    margin-top: 50px;
-  }
-  
-  .doggo {
-    margin-top: 100px;
-  }
-  
-  .tea {
-    margin-top: 100px;
-  }
-  
-  .excursion {
-    margin-top: 100px;
+  .technical-skills-container {
+    padding: 0;
+    margin: 0;
   }
 
-  .skills-container h3 {
-    text-size-adjust: none;
-    font-size: 34.87px;
+
+}
+
+@media only screen and (min-width: 338px) and (max-width: 435px) {
+
+  .project {
+    height: 24rem;
+  }
+
+  .nav-projects {
+    flex-direction: column;
+  }
+
+  .technical-skills-container {
+    padding: 0;
+    margin: 0;
   }
 
   .other-skills-container {
-    width: 600px;
+    height: 20rem;
+    width: 21rem;
   }
 
-  .other-skills-container li {
-    font-size: 33px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .education-item {
+    flex-wrap: wrap;
+    padding: 1.5rem 0;
+  }
+
+  .education-container .image {
+    margin: 0 auto;
+  }
+
+  .edu-info {
+    padding: 0;
+    margin: 0;
   }
 
   .edu-info h3 {
-    text-size-adjust: none;
-    font-size: 34.87px;
+    text-align: center;
   }
 
   .edu-info p {
-    text-size-adjust: none;
-    font-size: 33px;
+    text-align: center;
   }
 
- .edu-info h4 {
-    text-size-adjust: none;
-    font-size: 33px;
+  #ithaca h4 {
+    text-align: center;
   }
 
-  .edu-info li {
-    text-size-adjust: none;
-    font-size: 33px;
+  #ocu h4 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 844px) {
+  .desktop {
+    display: none;
   }
 
-  #ithaca h3 {
-    text-size-adjust: none;
-    font-size: 34.87px;
+  /* Toggle Menu */
+
+  header {
+    padding: .5rem;
   }
 
-  #ithaca p {
-    text-size-adjust: none;
-    font-size: 33px;
+  header h1:hover {
+    transform: none;
+  }  
+
+  .mobile {
+    display: flex;
+    width: 100%;
   }
 
- #ithaca h4 {
-    text-size-adjust: none;
-    font-size: 33px;
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
   }
 
-  #resume p {
-    text-size-adjust: none;
-    font-size: 38px;
+  .logo {
+    order: 1;
+    text-align: center;
   }
 
-  .email {
-    text-size-adjust: none;
-    font-size: 38px;
+  .toggle {
+      order: 1;
+      padding: 0;
+  }
+
+  .item {
+      order: 3;
+      width: 100%;
+      text-align: center;
+      display: none;
+      padding: .5rem;
+  }
+
+  .active .item {
+      display: block;
+  }
+
+  /* About */
+
+  .about-container {
+    padding-top: 3.25rem;
+    padding-bottom: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about-container h2 {
+    text-align: center;
   }
 
 }
