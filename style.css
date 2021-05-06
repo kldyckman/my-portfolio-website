@@ -247,25 +247,26 @@ nav .last-link {
 #education {
   background-color: #BEA3EB;
   scroll-margin-top: 3.5rem;
-  display: flex;
-  justify-content: center;
 }
+
 
 .education-list-container {
   background-color: white;
   box-shadow: 0 0 20px rgb(0 0 0 / 20%);
   border-radius: 10px;
-  max-width: 50rem;
   display: flex;
-  flex-flow: column;
-  padding: 0 1.5rem;
-  margin: 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+  margin: 1.5rem 16rem;
   transition: margin 0.4s, padding 0.4s;
+
 }
 
 .education-item {
+  background-color: white;
   display: flex;
-  padding: 1.5rem;
+  margin: 1.5rem;
 }
 
 .education-item ul {
@@ -275,6 +276,11 @@ nav .last-link {
 .edu-info {
   width: 100%;
   padding: 0 2rem 2rem 2rem;
+}
+
+.edu-info-ithaca {
+  width: 100%;
+  padding: 0 2rem;
 }
 
 .edu-info h3 {
@@ -433,17 +439,15 @@ nav .last-link {
     text-align: center;
   }
 
+  .edu-info h4 {
+    text-align: center;
+  }
+
+
   .edu-info p {
     text-align: center;
   }
 
-  #ithaca h4 {
-    text-align: center;
-  }
-
-  #ocu h4 {
-    text-align: center;
-  }
 }
 
 @media only screen and (max-width: 844px) {
