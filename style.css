@@ -204,7 +204,6 @@ nav .last-link {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 4rem;
   padding: 2rem 0;
 }
 
@@ -453,6 +452,10 @@ nav .last-link {
 @media only screen and (max-width: 844px) {
   .desktop {
     display: none;
+  }
+
+  .technical-skills-container {
+    margin: 0 4rem;
   }
 
   /* Toggle Menu */
